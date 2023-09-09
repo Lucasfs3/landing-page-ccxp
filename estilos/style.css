@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: #FFD900;
+}
+
+header img {
+    padding: 30px 0px 30px 65px;
+    
+}
+
+.container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 50%;
+}
+
+div#anuncio-esquerda {
+    background-color: #514988;
+    text-align: center;
+    
+}
+
+div#anuncio-esquerda  h1{
+    color: #F3C61F;
+    font-size: 45px;
+    word-spacing: 10px;
+    padding-top: 30px;
+}
+
+div#anuncio-esquerda  h2{
+    color: white;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+div#anuncio-esquerda p {
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 50px;
+}
+
+div#contador {
+    display: flex;
+    justify-content: space-around;
+}
+
+div#contador h1 {
+    color: #514988;
+    margin-top: 20px;
+    font-size: 35px;
+}
+
+
+div#anuncio-direita h2 {
+    text-align: center;
+    color: #E33881;
+    margin-bottom: 10px;
+}
+
+video {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+div#ingrecos h2 {
+    font-size: 20px;
+    color: #F3C61F;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+div#ingrecos #imagens {
+    margin-left: 30px;
+    
+
+}
+
+div#ingrecos #imagens img {
+    width: 154px;
+
+}
+
+div#botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#botao button{
+    width: 500px;
+    height: 100px;
+    border: none;
+    background-color: #514988;
+    border-radius: 15px;
+    color: white;
+    font-weight: bolder;
+    font-size: 32px;
+    cursor: pointer;
+    
+
+}
+
+div#botao button:hover {
+    color: #F3C61F;
+    background-color: #3d3570;
+}
+
+@media only screen and (max-width: 1327px) {
+    .container {
+        display: block;
+    }
+    #anuncio-esquerda h1 {
+        padding-top: 20px;
+        
+    }
+    #anuncio-esquerda p {
+        padding-bottom: 30px;
+    }
+
+    div#contador h1 {
+        font-size: 27px;
+    }
+
+    div#anuncio-direita {
+        font-size: 12px;
+    }
+
+    div#ingrecos h2 {
+        text-align: center;
+        margin: 0px;
+    }
+
+    div#imagens {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    div#botao button {
+        width: 350px;
+        margin-bottom: 25px;
+    }
+}
