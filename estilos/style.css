@@ -115,6 +115,10 @@ div#botao button:hover {
     background-color: #3d3570;
 }
 
+.card-highlight {
+    box-shadow: 19px 10px 10px 10px grey;
+}
+
 @media only screen and (max-width: 1327px) {
     .container {
         display: block;
@@ -151,3 +155,4 @@ div#botao button:hover {
         margin-bottom: 25px;
     }
 }
+
