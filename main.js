@@ -1,3 +1,4 @@
+const ingressos = []
 
 function addRedBorder(id) {
     element = document.querySelector("#" + id)
@@ -24,7 +25,7 @@ function addKeyboardEventListeners() {
         var ingresso1 = document.getElementById("quinta")
         var ingresso2 = document.getElementById("sexta")
         var ingresso3 = document.getElementById("sabado")
-        var ingresso4 = document.getElementById("dommingo")
+        var ingresso4 = document.getElementById("domingo")
 
         var code = event.code
         if (code == 'Digit1') {
@@ -55,6 +56,17 @@ function addKeyboardEventListeners() {
             ingresso4.classList.toggle("card-highlight")
         }
     } , false)
+}
+
+function selectCard(selector) {
+    var element = document.querySelector(selector)
+    element.classList.toggle("card-selected")
+    if(ingressos.includes(selector)) ingressos.pop(selector)
+    else ingressos.push(selector)
+}
+
+function showSelectedCards() {
+    if (ingressos.length > 0) alert("Ingressos Selecionados:" + ingressos)
 }
 
 addKeyboardEventListeners()
